@@ -2,15 +2,17 @@
 #include <math.h>
 
 int main() {
-	double x1, x2, y1, y2;
+	double a,b,t,k,e;
 
-	printf("Ird be az elso pontot\n");
-	scanf("%lf,%lf", &x1, &y1);
+	printf("Add meg a 2 oldalt.\n");
+	scanf("%lf,%lf", &a, &b);
 
-	printf("Ird be a masodik pontot\n");
-	scanf("%lf,%lf", &x2, &y2);
+	t=a*b;
+	k=2*(a+b);
+	e=sqrt((a+b)*(a+b));
 
-	printf("d=%f\n", sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2)));
+	printf("T = %.3f, K = %.3f, e = %.3f \n ",t,k,e);
+
 
 	return 0;
 }
