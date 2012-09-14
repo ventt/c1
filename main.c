@@ -1,18 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 
+#define PI 3.14159265359
+
 int main() {
-	double a,b,t,k,e;
+	double d, h;
 
-	printf("Add meg a 2 oldalt.\n");
-	scanf("%lf,%lf", &a, &b);
+	printf("írd be az átmérőt és a magasságot!\n");
+	scanf("%lf,%lf", &d, &h);
 
-	t=a*b;
-	k=2*(a+b);
-	e=sqrt((a+b)*(a+b));
-
-	printf("T = %.3f, K = %.3f, e = %.3f \n ",t,k,e);
-
-
+	printf("%.1f liter festék\n",(d*d*PI)/4+d*PI*h);
 	return 0;
 }
